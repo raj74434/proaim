@@ -1,0 +1,376 @@
+
+*{
+    
+list-style: 0px;
+padding: 0px;
+}
+
+.phone{
+    height: 20px;
+    background-color: #007aff;
+}
+
+.innerNavBar{
+    max-width: 1500px;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: transparent;
+    background: transparent;
+}
+.navBar{
+    margin: auto;
+    font-size: 15px;
+    font-family: Roboto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;     */
+    /* */
+    /* background: transparent; */
+}
+
+.linkTag{
+    text-decoration: none; 
+    color: white;
+}
+
+.linkTag:hover{
+    color: #0e1a1e;
+    text-decoration: none; 
+    cursor: pointer;
+    /* color: #007aff; */
+}
+.navLeft{
+    text-align: center;
+    padding-top: 40px;
+   
+}
+ .navLeft>h1{
+    color: white;
+    margin-top: 0px;
+    width: 140px;
+}
+
+ 
+.navRight{
+display: flex;
+justify-content: space-around;
+width: 40%;
+}
+
+.navRight>div{
+    color: white;
+    border: solid transparent;
+    text-align: center;
+    padding-top: 30px;
+}
+.navRight>div:nth-child(2){
+    width: 24%;
+    /* background-color: #007aff; */
+}
+
+.navRight>div:hover{
+    color:#007aff;
+    border-bottom: solid #007aff;
+    /* cursor: pointer; */
+    transition: border 1s;
+}
+
+
+.navContent{
+top:  150px;
+transition: top  0.2s ease-in-out;
+}
+/* Hide the sub navbar content not div so that div is available all time and able to do transition */
+.navContent>.sub_navbarlinkTag{
+    display: none;
+    transition:  0.2s ease-in-out;
+}
+
+/* increase sub navbar width from here */
+.navRight>div:hover .navContent{
+    /* When we will hover on product then sub nav bar appear */
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    width: 230px;
+    height:fit-content;
+    background-color: #f3f3f3;
+    top:  97px;
+    transition: top 0.2s ease-in-out;
+    
+}
+.navRight>div:hover .sub_navbarlinkTag{
+    display:block ;
+}
+
+.sub_navbarlinkTag{
+    cursor: pointer;
+    text-decoration: none;
+    color: #007aff;
+    background-color: #f3f3f3;
+    padding: 3px 15px 3px 20px;
+    border-bottom:solid transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.sub_navbarlinkTagDiv{
+    display: flex;
+}
+
+.sub_navbarlinkTag:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-bottom: solid #007aff;
+}
+
+/* When we hover on product category then all product of that category will appear */
+/*  sub sub navbar */
+
+.productTypes{
+    border-radius: 10%;
+    position: absolute;
+   max-height: 0px;
+   width: 0px;
+   margin-top: 0px;
+   font-size: 0px;
+   margin-left:90%;
+   transition:  0.2s ease-in-out;
+}
+
+.sub_sub_navbarlinkTagProduct{
+    visibility: hidden;
+}
+
+
+/* navbar product list  */
+.sub_navbarlinkTag:hover .productTypes{
+
+    display: block;
+    line-height: 18px;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 90%;
+    background-color: #3087e5;
+    color: white;
+    width: 220px;
+    margin-top: 0px;
+    display: block;
+    max-height: 1000px; 
+    transition:  0.2s ease-in-out;
+     
+  
+}
+
+.sub_navbarlinkTag:hover .productTypes .sub_sub_navbarlinkTagProduct {
+ visibility: visible;
+}
+
+
+.sub_sub_navbarlinkTagProduct{
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    text-decoration: none;
+   
+}
+.sub_sub_navbarlinkTagProduct>div{
+    padding: 20px;
+    border: solid transparent;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid white;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #3087e5;
+    line-height: 20px;
+}
+
+
+
+.sub_sub_navbarlinkTagProduct>div:hover{
+    
+    background-color: #007aff;
+}
+
+
+/* ================================================== */
+
+  
+.hamberger{
+    display: none;
+    margin: auto;
+    
+}
+.cross{
+    border: solid red;
+    width: 50px;
+}
+.navdrawer{
+    display: none;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+    .navBar{
+        height: 85px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+        
+    }
+    .navLeft{
+        width: 100px;
+        height: 85px;
+    }
+    
+    .navLeft>img{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .navRight{
+        display: none;
+        
+        }
+
+    
+
+    .hamberger{
+        /* border: solid green; */
+        text-align:end;
+        width: 50%;     
+        display: block;
+        margin-right: 15px;
+
+         
+    }
+    .hamberger>img{
+        /* border: solid blue; */
+        width: 30px;
+    }
+    .navouter{
+        display: flex;
+    }
+    .navbar_menu{ 
+        height: 100vh;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 25px;
+        display: block;
+        position: absolute;
+        width: 60%;
+        background-color: #f3f3f3;
+        transition: all 5s;
+        /* transition: transform 0.3s ease;  */
+        /* Added transition property */
+        /* transform: translateX(10%); */
+         /* Initially move it to the right */
+         /* Initially move it to the right */
+
+        
+    }
+    .navbar_menu.show {
+        transform: translateX(0); /* Move it back to the original position */
+    }
+    .navbar_menu div{
+       /* margin-top: 20px; */
+       border-bottom: solid #007aff;
+    }
+    .navdrawer{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 490px) and (max-width: 800px)
+ {
+    .navBar{
+        
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+        
+    }
+    
+    .navLeft>img{
+        margin-top: 0px;
+        width: 100%;
+        
+    }
+    .navRight{
+        display: none;
+        
+        }
+
+    
+
+    .hamberger{
+        /* border: solid green; */
+        text-align:end;
+        width: 50%;     
+        display: block;
+        margin-right: 15px;
+
+         
+    }
+    .hamberger>img{
+        width: 40px;
+        /* border: solid blue; */
+    }
+    .navouter{
+        display: flex;
+    }
+    .navbar_menu{ 
+        height: 100vh;
+        /* border: solid yellow; */
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 30px;
+        display: block;
+        position: absolute;
+        width: 60%;
+        background-color: #f3f3f3;
+
+        
+    }
+    .navbar_menu div{
+       /* margin-top: 20px; */
+       border-bottom: solid #007aff;
+    }
+    .navdrawer{
+        display: block;
+    }
+}

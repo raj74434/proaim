@@ -1,0 +1,51 @@
+.drawerContainer {
+    z-index: 1000;
+    /* border: solid red; */
+    position: fixed;
+    right: -100%; /* Drawer starts off-screen to the right */
+    width: 45%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: right 0.3s ease-in-out;
+    top: 85px;
+  }
+  
+  .drawerContainer_open{
+    z-index: 1000;
+    position: fixed;
+    right: 0; /* Drawer starts off-screen to the right */
+    width: 45%;
+    height: 100%;
+    background-color:  white;
+    transition: right 0.2s ease-in-out;
+    top: 85px;
+
+  }
+  .back{
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(189, 189, 189,0.5);
+    
+}
+
+  /* ====================================   drawer css ended and drawer  contetent css started=========================== */
+  
+  .drawerContent {
+    padding: 16px;
+  }
+
+
+  .linkTag{
+    /* font-size: 10px; */
+    text-decoration: none; 
+    color: #007aff;
+}
+
+.linkTag:hover{
+    text-decoration: none; 
+    color: #007aff;
+}

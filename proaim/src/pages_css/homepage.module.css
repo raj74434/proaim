@@ -1,0 +1,108 @@
+
+.homepage_intro{
+   /* border: solid red; */
+   /* height: 90vh; */
+   width:100%;
+    /* background-image: url("../assets/images/homepage/proaimhubSoilder.jpg"); */
+}
+
+.homepage_img_and_button{
+    display: flex;
+}
+
+.homepage_soldier_img{
+    width:100%;
+}
+.homepage_soldier_img>img{
+    width: 100%;
+}
+.homepage_soldier_img_btns{
+    /* border: solid red; */
+    width: 23%;
+    margin-left: 70%;
+    position: absolute;
+    top: 300px;
+}
+.homepage_soldier_img_playBtn{
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    background-color:#0e1a1e ;
+    color: white;
+    /* margin-left: 100%; */
+  
+    border: solid transparent;
+}
+
+.homepage_soldier_img_playBtn:hover{
+    cursor: pointer;
+    background-color: #9dc4c8;
+    color: #0e1a1e;
+    transition: 1s;
+}
+
+.homepage_soldier_img_earnBtn{
+    border-radius: 15px;
+    padding: 2%;
+    width: 100%;
+    margin-top: 10%;
+    background-color:#0e1a1e ;
+    color: white;
+    border: solid transparent;
+}
+.homepage_soldier_img_earnBtn:hover{
+    cursor: pointer;
+    background-color: #9dc4c8;
+    color: #0e1a1e;
+    transition: 1s;
+}
+
+.homepage_desc{
+    box-sizing: border-box;
+    color: #6aa8b0;
+    background-color: #33333b;
+    /* height: 780px; */
+    height: 100%;
+    padding: 10px;
+}
+.homepage_desc_heading_div{
+padding: 7px;
+}
+.homepage_desc_content{
+    padding: 8px;
+    display: flex;
+}
+.homepage_desc_all_imgs{
+    
+    margin-left: 10%;
+    width: 50%;
+    /* border: solid red; */
+}
+.homepage_desc_img_div{
+    /* border: solid red; */
+    position: absolute;
+    width: 26%;
+    left: 65%;
+    margin-top: 3%;
+}
+.homepage_desc_img{
+width: 100%;
+height: 100%;
+}
+.homepage_desc_pubg_img_div{
+    /* height: 200px; */
+    /* border: solid red; */
+    left: 48%;
+    width:49%;
+    position:sticky;
+    z-index: 0;
+    margin-top:25% ;
+}
+.homepage_desc_pubg_img{
+    width: 100%;
+}
+.homepage_desc_desc{
+    width: 55%;
+    padding: 10px;
+    /* margin-right: 80%; */
+}
